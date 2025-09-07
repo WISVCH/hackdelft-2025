@@ -29,7 +29,7 @@
         "lighthouse": "^11.1.0",
         "parcel": "^2.9.3",
         "parcel-reporter-prerender": "^2.0.0",
-        "sharp": "^0.31.1"
+        "sharp": "^0.34.3"
     },
     "@parcel/transformer-css": {
         "cssModules": true
