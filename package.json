@@ -14,24 +14,38 @@
         "serve": "yarn build && http-server ./dist -p 8000 -g -b",
         "clear-cache": "rm -rf dist .parcel-cache parcel-bundle-reports",
         "fix-prerender": "sed -i 's/http:\\/\\/localhost:8000\\//\\//g' dist/index.html",
-        "lighthouse": "lighthouse http://localhost:8000 --view"
+        "lighthouse": "lighthouse http://localhost:8000 --view",
+        "preinstall": "npx npm-force-resolutions"
     },
     "dependencies": {
-        "@fortawesome/free-brands-svg-icons": "^6.4.2",
-        "@fortawesome/free-solid-svg-icons": "^6.4.2",
-        "preact": "^10.18.1"
+        "@fortawesome/free-brands-svg-icons": "^6.7.2",
+        "@fortawesome/free-solid-svg-icons": "^6.7.2",
+        "@parcel/resolver-default": "^2.16.0",
+        "@parcel/transformer-css": "^2.16.0",
+        "npm-force-resolutions": "^0.0.10",
+        "preact": "^10.27.2"
     },
     "devDependencies": {
-        "@parcel/packager-raw-url": "^2.9.3",
-        "@parcel/transformer-sass": "^2.9.3",
-        "@parcel/transformer-webmanifest": "^2.9.3",
+        "@parcel/packager-raw-url": "^2.16.0",
+        "@parcel/transformer-sass": "^2.16.0",
+        "@parcel/transformer-webmanifest": "^2.16.0",
         "http-server": "^14.1.1",
-        "lighthouse": "^11.1.0",
-        "parcel": "^2.9.3",
+        "lighthouse": "^12.8.2",
+        "parcel": "^2.16.0",
         "parcel-reporter-prerender": "^2.0.0",
         "sharp": "^0.33.5"
     },
     "@parcel/transformer-css": {
         "cssModules": true
+    },
+    "resolutions": {
+        "postcss": "^8.5.6",
+        "tough-cookie": "^6.0.0",
+        "nth-check": "^2.0.1",
+        "form-data": "^2.5.4",
+        "braces": "^3.0.3",
+        "request": "*",
+        "micromatch": "^4.0.8",
+        "http-proxy-middleware": "^2.0.7-beta.1"
     }
 }
