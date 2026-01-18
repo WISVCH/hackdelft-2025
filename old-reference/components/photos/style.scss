@@ -1,0 +1,121 @@
+@import "../../variables";
+
+.photos {
+    margin-bottom: 32px;
+
+    h2 {
+        color: $primary-color;
+        font-family: "Krona-One";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: 32px;
+        padding-left: 2px;
+    }
+
+    p {
+        margin: 0 8px;
+    }
+}
+
+.galleryContainer {
+    position: relative;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 30%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+        z-index: 1; 
+        pointer-events: none;
+    }
+
+    &::before {
+        left: 0;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    }
+
+    &::after {
+        right: 0;
+    }
+}
+
+
+.gallery {
+    position: relative;
+    display: flex;
+    overflow-x: scroll;
+    gap: 8px;
+    scrollbar-width: auto;
+
+    &::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgb(48, 48, 48);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(100, 100, 100);
+    }
+}
+
+.image {
+    cursor: pointer;
+
+    img {
+        height: 260px;
+        width: 400px;
+        object-fit: cover;
+    }
+}
+
+.fullimage {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #181226bb;
+    backdrop-filter: blur(12px);
+    z-index: 2;
+
+    .navigation {
+        position: absolute;
+        top: 50%; 
+        transform: translateY(-50%); 
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        pointer-events: none; 
+    }
+
+    .arrow {
+        color: white;
+        font-size: 72px;
+        cursor: pointer;
+        pointer-events: auto; 
+    }
+
+    .arrow:hover {
+        color: $primary-color;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+        max-height: 90vh;
+        max-width: 90vw;
+    }
+}
+

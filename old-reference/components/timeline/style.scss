@@ -1,0 +1,205 @@
+@import "../../mixins";
+@import "../../variables";
+
+.timeline {
+    margin-bottom: 32px;
+    align-self: center;
+
+    h2 {
+        color: $secondary-color;
+        font-family: "Krona-One";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+        text-align: center;
+    }
+
+    .days {
+        display: none;
+    }
+}
+
+.timeline .container {
+    display: flex;
+    flex-direction: column;
+
+    > div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 200px);
+    }
+
+    h3 {
+        color: $secondary-color;
+        margin: 4px 16px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .mobiledays {
+        color: $primary-text;
+        font-family: "Krona-One";
+        margin: 16px 8px;
+    }
+
+    .saturday {    
+        width: 50%;   
+        .timelineEntry:nth-child(1) {
+            grid-column-start: 2;
+            grid-row-start: 0;
+            grid-row-end: 1;
+        }
+        .timelineEntry:nth-child(2) {
+            grid-column-start: 1;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .timelineEntry:nth-child(3) {
+            grid-column-start: 2;
+            grid-row-start: 2;
+            grid-row-end: 12;
+            height: 100%;
+
+            div {
+                height: 100%;
+            }
+        }
+        .timelineEntry:nth-child(4) {
+            grid-column-start: 1;
+            grid-row-start: 6;
+            grid-row-end: 8;
+        }
+        .timelineEntry:nth-child(5) {
+            grid-column-start: 1;
+            grid-row-start: 9;
+            grid-row-end: 10;
+        }
+    }
+
+    .sunday {
+        width: 50%;
+        .timelineEntry:nth-child(1) {
+            grid-column-start: 2;
+            grid-row-start: 1;
+            grid-row-end: 6;
+            height: 100%;
+        }
+        .timelineEntry:nth-child(2) {
+            grid-column-start: 1;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            height: 100%;
+        }
+        .timelineEntry:nth-child(3) {
+            grid-column-start: 1;
+            grid-row-start: 4;
+            grid-row-end: 7;
+            height: 100%;
+        }
+        .timelineEntry:nth-child(4) {
+            grid-column-start: 2;
+            grid-row-start: 6;
+            grid-row-end: 8;
+            height: 100%;
+        }
+
+        .timelineEntry:nth-child(5) {
+            grid-column-start: 1;
+            grid-row-start: 8;
+            grid-row-end: 9;
+            height: 100%;
+        }
+
+        .timelineEntry:nth-child(6) {
+            grid-column-start: 1;
+            grid-row-start: 7 ;
+        }
+    }
+
+
+
+}
+
+.timelineEntry {
+    margin: 0 8px;
+    display: flex;
+    flex-direction: column;
+
+    time {
+        font-style: italic;
+
+        svg {
+            padding-right: 4px;
+        }
+    }
+
+    div {
+        padding: 10px;
+        border: 2px solid $primary-color;
+        font-family: "Krona-One";
+        font-size: 14px;
+        flex-grow: 1;
+    }
+
+    h4 {
+        margin: 0;
+        margin-bottom: 8px;
+        color: $primary-color;
+        font-size: 16px;
+
+        svg {
+            padding-right: 4px;
+        }
+    }
+}
+
+@include breakpoint(xl) {
+    .timeline .container {
+        flex-direction: row;
+
+        .mobiledays {
+            display: none;
+        }
+    }
+
+    .saturday {
+        padding-right: 75px;
+        border-right: 2px solid $primary-color;
+    }
+
+    .sunday {
+        padding-left: 75px;
+    }
+
+    .timeline .days {
+        display: flex;
+        flex-direction: row;
+
+        h3 {
+            width: 50%;
+            min-width: calc(50% - 16px);
+            max-width: 50%;
+            font-weight: 400;
+            font-size: 20px;
+            font-family: "Krona-One";
+            margin: 24px 8px;
+
+            &:nth-child(2) {
+                margin-left: 82px;
+            }
+        }
+    }
+}
+
+@include breakpoint(md) {
+    .timeline .container > div {
+        grid-template-rows: repeat(10, 150px);
+    }
+}

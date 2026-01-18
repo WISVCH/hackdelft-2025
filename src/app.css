@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght,MONO@200..800,1&display=swap');
+
+@import "tailwindcss";
+
+@theme { 
+    --font-Sono: "Sono", sans-serif; 
+    --color-CranberryRed: 	#CC0818;
+    --color-OrangeOrange:	#DE8003; 
+    --color-PineappleYellow:#EEC259;
+    --color-VodkaWhite:		#F4F9FF;
+    --color-CBlue:			#649AD2;
+    --color-CppBlue:		#00589C;
+    --color-CSharpBlue:		    #9A4993;
+}
