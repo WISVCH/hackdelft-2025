@@ -1,0 +1,50 @@
+[
+    {
+        "type": "organisation",
+        "title": "Organisation",
+        "items": [
+            {
+                "logoKey": "ch",
+                "url": "https://wisv.ch/",
+                "title": "W.I.S.V. Christiaan Huygens"
+            },
+            {
+                "logoKey": "xtudelft",
+                "url": "https://www.tudelft.nl/en/x/",
+                "title": "X TU Delft"
+            }
+        ]
+    },
+    {
+        "type": "primary",
+        "title": "Primary",
+        "items": [
+            {
+                "logoKey": "navara",
+                "url": "https://www.navara.nl/",
+                "title": "Navara"
+            },
+            {
+                "logoKey": "sping",
+                "url": "https://sping.nl/",
+                "title": "Sping"
+            },
+            {
+                "logoKey": "jetbrains",
+                "url": "https://www.jetbrains.com/",
+                "title": "JetBrains"
+            }
+        ]
+    },
+    {
+        "type": "secondary",
+        "title": "Secondary",
+        "items": [
+            {
+                "logoKey": "unipartners",
+                "url": "https://www.unipartners.nl/",
+                "title": "UniPartners"
+            }
+        ]
+    }
+]
