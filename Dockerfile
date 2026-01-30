@@ -1,17 +1,20 @@
-# Start the builder container.
-FROM satantime/puppeteer-node AS builder
-WORKDIR /src
+FROM node:24-alpine AS builder
+RUN mkdir /app && mkdir /app/data
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . .
+RUN npm run build
+RUN npm prune --production
 
-# Instal Dependencies.
-COPY ./package.json .
-RUN yarn
+FROM node:24-alpine
+RUN mkdir /app
+WORKDIR /app
+COPY --from=builder /app/build build/
+COPY --from=builder /app/node_modules node_modules/
+COPY package.json .
+EXPOSE 3000
+ENV NODE_ENV=production
+CMD [ "node", "build" ]
 
-# Copy source files and build.
-COPY ./static ./static
-COPY ./data ./data
-COPY ./src ./src
-RUN yarn build
 
-# Start the NGINX container.
-FROM wisvch/nginx
-COPY --from=builder /src/dist /srv
