@@ -1,4 +1,4 @@
-<script>
+<script >
     import Logo from "$lib/assets/Logo.svg"
     import Calendar from "$lib/assets/calendar.svg"
     import Location from "$lib/assets/location.svg"

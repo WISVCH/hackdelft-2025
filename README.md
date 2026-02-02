@@ -1,18 +1,6 @@
-# sv
+# Hack Delft website 2026
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
+The website for the Hack delft hackathon. This years theme is Hack on the beaCH!
 
 ## Developing
 
@@ -27,12 +15,14 @@ npm run dev -- --open
 
 ## Building
 
-To create a production version of your app:
-
-```sh
-npm run build
+To create a production version of the website:
+```
+$ npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+## Deploy
+This website is deployed with a docker image, to run the dockerfile, use:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```
+$ docker run -p 3000:3000 hack-delft-2026
+```
