@@ -1,0 +1,52 @@
+{
+    "faq": [
+        {
+            "question": "Who can attend?",
+            "answer": "Any student can attend HackDelft."
+        },
+        {
+            "question": "How can I sign up for HackDelft?",
+            "answer": "The tickets will be available soon!"
+        },
+        {
+            "question": "What languages can I use during the event?",
+            "answer": "You can use any language or tool you want during the event!"
+        },
+        {
+            "question": "I don't have a group yet. Can I still sign up?",
+            "answer": "Of course! You can use the discord to find others still searching for a group. Haven't found a group yet on the day itself? No problem we can help you find a group during the event."
+        },
+        {
+            "question": "What is the maximum group size?",
+            "answer": "There is a limit of four participants per group. Do you have more friends? You can join in multiple groups! Don't know who joins you yet? You can form your groups later, or even at the event itself."
+        },
+        {
+            "question": "What if I've never been to a hackathon before?",
+            "answer": "HackDelft is a very beginner friendly hackathon, so that is no issue! At the start of the hackathon we will explain how the weekend works, after which you can start hacking with your team."
+        },
+        {
+            "question": "Can I still participate if I am not a programmer?",
+            "answer": "Yes! We have some challenges specifically designed for you. These challenges don't require a lot of programming experience, and are more focused on mathematics."
+        },
+        {
+            "question": "Can I start working on my submission before the event begins?",
+            "answer": "No, this is not allowed. The challenges will also not be announced before the event starts."
+        },
+        {
+            "question": "How much will it cost to attend HackDelft?",
+            "answer": "If you are a CH member tickets will be € 1,- and non-CH members will have to pay € 3,−. If you also want to attend the brunch on Sunday you will have to buy a brunch ticket for € 1,-"
+        },
+        {
+            "question": "What do I need to bring to the event?",
+            "answer": "You will have to bring your laptop, some chargers, and an air mattress with sleeping bag if you intent to sleep. Some hygiene items will also be appreciated by other hackers."
+        },
+        {
+            "question": "Do you provide any travel reimbursement?",
+            "answer": "Unfortunately, we do not provide any travel reimbursement. We hope to see you at the event regardless!"
+        },
+        {
+            "question": "My question is not in here!",
+            "answer": "Send us an email at `hackdelft@ch.tudelft.nl`, and we will be happy to help you out!"
+        }
+    ]
+}

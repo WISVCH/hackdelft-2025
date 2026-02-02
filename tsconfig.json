@@ -14,7 +14,9 @@
         "baseUrl": "./src",
         "paths": {
             "/*": ["../*"]
-        }
+        },
+        "resolveJsonModule": true,
+        "esModuleInterop": true
     },
     "include": ["./src/**/*", "./static/**/*"],
     "exclude": ["node_modules"]
