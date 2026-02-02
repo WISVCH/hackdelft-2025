@@ -1,0 +1,66 @@
+{
+    "saturday": [
+        {
+            "id": "sa1",
+            "time": "11:30 - 12:00",
+            "name": "Walk-in",
+            "description": "During this time you can sign in with your team. If you don't have a team yet you can use this time to form some teams aswell. You can also already choose your table and setup your stuff."
+        },
+        {
+            "id": "sa2",
+            "time": "12:00 - 14:00",
+            "name": "Opening",
+            "description": "The companies will present their cases to you in the opening. After the presentation the cases will be divided overall groups according to your preferences. During this time we will also finalize the teams."
+        },
+        {
+            "id": "sa3",
+            "time": "14:00 - 00:00",
+            "name": "Hacking!",
+            "description": "You have 24 hours to create your solution. Good luck!"
+        },
+        {
+            "id": "sa4",
+            "time": "16:30 - 17:30",
+            "name": "Pitch workshop",
+            "description": "A pitch workshop will take place in which you will learn how to create the perfect pitch. This will be helpfull when you have to pitch your solution to the judges at the end of the contest. The workshop is provided by UniPartners"
+        },
+        {
+            "id": "sa5",
+            "time": "18:30 - 20:00",
+            "name": "Dinner",
+            "description": ""
+        }
+    ],
+    "sunday": [
+        {
+            "id": "su1",
+            "time": "00:00 - 14:00",
+            "name": "Hacking!",
+            "description": "You have 24 hours to create your solution. Good luck!"
+        },
+        {
+            "id": "su2",
+            "time": "9:00 - 09:30",
+            "name": "Morning Gymnastics",
+            "description": "Do you want to start the day of right? Join Marjolein for a healthy and energetic gymnastics session."
+        },
+        {
+            "id": "su3",
+            "time": "9:30 - 14:30",
+            "name": "Brunch",
+            "description": "In order to join the brunch you will have to buy a ticket. You can buy this at wisv.ch/hackticket "
+        },
+        {
+            "id": "su4",
+            "time": "14:00 - 16:00",
+            "name": "Judging",
+            "description": "You will have to present a short pitch to the judges."
+        },
+        {
+            "id": "su5",
+            "time": "16:00 - 17:00",
+            "name": "Award Ceremony",
+            "description": "During this ceremony we will hand out prizes to the winners of each case"
+        }
+    ]
+}
