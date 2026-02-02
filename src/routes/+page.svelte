@@ -2,12 +2,14 @@
     import Background from "$lib/Background.svelte"
     import StartingScreen from "$lib/StartingScreen.svelte";
     import About from "$lib/About.svelte";
+    import Footer from "$lib/footer.svelte";
 </script>
 
 <div class="absolute z-1">
     <Background />
 </div>
-<div class="absolute z-2">
+<div class="absolute z-2 p-4">
     <StartingScreen />
     <About/>
+    <Footer />
 </div>
