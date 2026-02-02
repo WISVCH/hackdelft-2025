@@ -1,6 +1,6 @@
 <script lang="ts">
 import { faq } from "$lib/data/faq.json"
-console.log(faq)
+
 interface Question {
     question: string;
     answer: string;

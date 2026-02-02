@@ -9,9 +9,9 @@
                 <p class="text-lg m-0 text-OrangeOrange">Site</p>
                 <a href="#home"         on:click|preventDefault={scrollIntoView} class="hover:text-OrangeOrange">Home</a>
                 <a href="#aboutus"      on:click|preventDefault={scrollIntoView} class="hover:text-OrangeOrange">About us </a>
-                <a href="#pictures"     on:click|preventDefault={scrollIntoView} class="hover:text-OrangeOrange">Pictures</a>
+                <!-- <a href="#pictures"     on:click|preventDefault={scrollIntoView} class="hover:text-OrangeOrange">Pictures</a>
                 <a href="#timetable"    on:click|preventDefault={scrollIntoView} class="hover:text-OrangeOrange">Timetable</a>
-                <a href="#sponsors"     on:click|preventDefault={scrollIntoView} class="hover:text-OrangeOrange">Sponsors</a>
+                <a href="#sponsors"     on:click|preventDefault={scrollIntoView} class="hover:text-OrangeOrange">Sponsors</a> -->
                 <a href="#faq"          on:click|preventDefault={scrollIntoView} class="hover:text-OrangeOrange">FAQ</a>                      
             </div>
             <div class="">
