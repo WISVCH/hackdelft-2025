@@ -3,10 +3,7 @@
     import StartingScreen from "$lib/StartingScreen.svelte";
     import About from "$lib/About.svelte";
     import Pictures from "$lib/Pictures.svelte";
-    import Timetable from "$lib/timetable.svelte";
-    import Sponsor from "$lib/Sponsor.svelte";
     import Faq from "$lib/Faq.svelte";
-    import Comittee from "$lib/Committee.svelte";
     import Footer from "$lib/footer.svelte";
 </script>
 
