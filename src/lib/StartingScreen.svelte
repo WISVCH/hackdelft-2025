@@ -4,7 +4,7 @@
     import Location from "$lib/assets/location.svg"
 </script>
 
-<section id='home' class="w-full">
+<section id='home' class="w-full h-screen">
     <div class="flex flex-col text-2xl  text-center">
         <div class="bg-CppBlue/50 p-4 rounded-md flex flex-col m-auto content-center justify-center w-full max-w-2xl">
             <img class="w-2/3 self-center" src={Logo} alt="HackDelft" />
