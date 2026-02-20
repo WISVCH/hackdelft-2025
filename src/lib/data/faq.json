@@ -18,15 +18,11 @@
         },
         {
             "question": "What is the maximum group size?",
-            "answer": "There is a limit of four participants per group. Do you have more friends? You can join in multiple groups! Don't know who joins you yet? You can form your groups later, or even at the event itself."
+            "answer": "There is a limit of four participants per group. Don't know who joins you yet? You can form your groups later, or even at the event itself."
         },
         {
             "question": "What if I've never been to a hackathon before?",
             "answer": "HackDelft is a very beginner friendly hackathon, so that is no issue! At the start of the hackathon we will explain how the weekend works, after which you can start hacking with your team."
-        },
-        {
-            "question": "Can I still participate if I am not a programmer?",
-            "answer": "Yes! We have some challenges specifically designed for you. These challenges don't require a lot of programming experience, and are more focused on mathematics."
         },
         {
             "question": "Can I start working on my submission before the event begins?",
@@ -34,7 +30,7 @@
         },
         {
             "question": "How much will it cost to attend HackDelft?",
-            "answer": "If you are a CH member tickets will be € 1,- and non-CH members will have to pay € 3,−. If you also want to attend the brunch on Sunday you will have to buy a brunch ticket for € 1,-"
+            "answer": "If you are a CH member tickets will be € 1,69-, and non-CH members will have to pay € 3,69−. If you also want to attend the brunch on Sunday you will have to buy a brunch ticket for € 1,-"
         },
         {
             "question": "What do I need to bring to the event?",

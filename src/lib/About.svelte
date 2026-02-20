@@ -9,10 +9,11 @@
             <div class="flex flex-col">
                 <h3 class="text-center text-3xl">What?</h3>
                 <p class="mb-5">
-                    Embark on an exciting journey with Hack to the Future, a fully inclusive 24-hour hackathon experience. 
+                    Embark on an exciting journey with Hack on the Beach, a fully inclusive 24-hour hackathon experience. 
                     Immerse yourself in a dynamic environment where participants take on entertaining challenges presented by our amazing partner companies. 
                     Beyond the thrill of problem-solving, the event offers the chance to win exciting prizes and guarantees a good time for all involved. 
                     A brunch is also offered on sunday. 
+                    <!-- is it tho? -->
                     To join this you will have to buy a different brunch ticket.
                 </p>
                 <h3 class="text-center text-3xl">Who?</h3>
@@ -26,7 +27,7 @@
             <div class="flex flex-col">
                 <h3 class="text-center text-3xl">When?</h3>
                 <p class="mb-5">
-                    Mark your calendars for the 6th and 7th of May as we invite you to join us at TU Delft X for an exhilarating two-day event. 
+                    Mark your calendars for the 6th and 7th of June as we invite you to join us at TU Delft X for an exhilarating two-day event. 
                     The excitement kicks off on Saturday morning, extending all the way through Sunday evening. 
                     To enhance your experience, we've got dinner covered, and sleeping over at the venue is an option. 
                     Across these two days, participants will have a dedicated 24 hours to collaboratively tackle and solve a challenging case.
