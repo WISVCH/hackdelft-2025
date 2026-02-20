@@ -21,8 +21,12 @@ $ npm run build
 ```
 
 ## Deploy
-This website is deployed with a docker image, to run the dockerfile, use:
-
+This website is deployed with a docker image. 
+To build the docker image, use: 
 ```
-$ docker run -p 3000:3000 hack-delft-2026
+$ docker build -t hack-delft-2026 .
+```
+To run the docker container, use:
+```
+$ docker run -d -p 8080:8080 hack-delft-2026
 ```
