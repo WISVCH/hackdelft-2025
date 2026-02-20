@@ -1,3 +1,4 @@
+# build static website
 FROM node:24-alpine AS builder
 RUN mkdir /app && mkdir /app/data
 WORKDIR /app
@@ -7,14 +8,6 @@ COPY . .
 RUN npm run build
 RUN npm prune --production
 
-FROM node:24-alpine
-RUN mkdir /app
-WORKDIR /app
-COPY --from=builder /app/build build/
-COPY --from=builder /app/node_modules node_modules/
-COPY package.json .
-EXPOSE 3000
-ENV NODE_ENV=production
-CMD [ "node", "build" ]
-
-
+# Start the NGINX container.
+FROM wisvch/nginx
+COPY --from=builder /app/build /srv
