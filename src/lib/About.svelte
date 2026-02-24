@@ -3,8 +3,8 @@
 </script>
 
 <section id="aboutus" class="my-8">
-    <div class="mb-8">
-        <h2 class="text-5xl text-center text-CSharpBlue mb-5">About us</h2>
+    <div class="mb-8 bg-CppBlue/50 p-4 rounded-md">
+        <h2 class="text-5xl text-center mb-5">About us</h2>
         <div class="flex flex-col sm:flex-row sm:space-x-8">
             <div class="flex flex-col">
                 <h3 class="text-center text-3xl">What?</h3>
