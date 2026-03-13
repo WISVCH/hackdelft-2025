@@ -23,13 +23,13 @@
                     Sign-up form
                 </a> -->
 
-                <!-- <small> Unfortunatly the event is sold out but you can sign up for the waiting list below and have a chance of still claiming a spot!</small>
-                <a href="https://ch.tudelft.nl/activities/event/2024/hackaton/" target="_blank">
-                    <Icon icon={faTicket} pad />
+                <!-- <small> Unfortunatly the event is sold out but you can sign up for the waiting list below and have a chance of still claiming a spot!</small> -->
+                <a class="p-2.5 rounded-md bg-OrangeOrange hover:bg-PineappleYellow" href="https://ch.tudelft.nl/activities/event/2026/hackathon/" target="_blank">
+                    <!-- <Icon icon={faTicket} pad /> -->
                     Buy Tickets
                 </a>
                 
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6cXDC7eyLyKr7F8pDm-0kJvlPPoUGydYaqSLxeHh8XIsePg/viewform?usp=sf_link" target="_blank">
+                <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSd6cXDC7eyLyKr7F8pDm-0kJvlPPoUGydYaqSLxeHh8XIsePg/viewform?usp=sf_link" target="_blank">
                     <Icon icon={faClipboardList} pad />
                     Waiting list
                 </a> -->
