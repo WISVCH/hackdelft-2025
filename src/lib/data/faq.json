@@ -42,7 +42,7 @@
         },
         {
             "question": "My question is not in here!",
-            "answer": "Send us an email at `hackdelft@ch.tudelft.nl`, and we will be happy to help you out!"
+            "answer": "Send us an email at 'hackdelft@ch.tudelft.nl' and we will be happy to help you out!"
         }
     ]
 }

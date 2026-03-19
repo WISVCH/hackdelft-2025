@@ -15,9 +15,8 @@ interface Question {
                 <details class="px-3 py-5">
                     <summary class="cursor-pointer text-lg text-center hover:text-OrangeOrange">
                         {q.question}
-                        <!-- <span class={style.icon}><Icon icon={faChevronDown}/></span> -->
                     </summary>
-                    <p class="mx-2 my-0 text-lg text-center">{q.answer}</p>
+                    <p class="mx-2 my-0 mt-2 xl:text-lg text-sm text-center">{q.answer}</p>
                 </details>
             </li>
         {/each}
