@@ -3,6 +3,7 @@
     import StartingScreen from "$lib/StartingScreen.svelte";
     import About from "$lib/About.svelte";
     import Pictures from "$lib/Pictures.svelte";
+    import Timetable from "$lib/Timetable.svelte";
     import Faq from "$lib/Faq.svelte";
     import Footer from "$lib/footer.svelte";
 </script>
@@ -14,7 +15,7 @@
     <StartingScreen/>
     <About/>
     <Pictures/>
-    <!-- <Timetable/> -->
+    <Timetable/>
     <!-- <Sponsor/> -->
     <Faq/>
     <!-- <Committee/> -->
