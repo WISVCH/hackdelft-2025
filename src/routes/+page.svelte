@@ -14,7 +14,7 @@
 <div class="absolute z-2 p-4">
     <StartingScreen/>
     <About/>
-    <!-- <Pictures/> -->
+    <Pictures/>
     <Timetable/>
     <!-- <Sponsor/> -->
     <Faq/>
