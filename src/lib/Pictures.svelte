@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount, onDestroy } from "svelte";
-    import Photo from "./Photo.svelte";
 
     // Replace with your actual data import, e.g.:
     const imageModules = import.meta.glob('$lib/assets/photos-event/*', {
@@ -15,6 +14,13 @@
     let animationId: number | null = null;
     let shouldAnimate = true;
     let lastScrolled = 0;
+
+    let openIndex: number | null = $state(null);
+
+    function navigate(delta: number) {
+        if (openIndex === null) return;
+        openIndex = (openIndex + delta + photosMap.length) % photosMap.length;
+    }
 
     function animate(time: DOMHighResTimeStamp) {
         if (!shouldAnimate) {
@@ -71,7 +77,6 @@
                after:content-[''] after:absolute after:inset-y-0 after:right-0 after:w-[30%]
                after:bg-linear-to-r after:from-transparent after:to-black after:z-10 after:pointer-events-none"
     >
-        <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
         <div
             bind:this={galleryEl}
             class="relative flex flex-nowrap min-w-0 overflow-x-scroll gap-2
@@ -81,16 +86,57 @@
                    [&::-webkit-scrollbar-thumb]:bg-[rgb(100,100,100)]"
         >
             {#each photosMap as url, index}
-                <Photo
-                    {url}
-                    currentIndex={index}
-                    totalPhotos={photosMap.length}
-                    activeIndex={currentIndex}
-                    startup={shouldAnimate}
-                    onnavigate={(i) => (currentIndex = i)}
-                    onresumeAnimate={setAnimate}
-                />
+                <button
+                    class="cursor-pointer shrink-0"
+                    aria-label="photocarousel-image"
+                    onclick={() => { openIndex = index; setAnimate(false); }}
+                >
+                    <enhanced:img src={url} alt="HackDelft photo" loading="lazy" class="h-65 w-100 object-cover" />
+                </button>
             {/each}
         </div>
     </div>
+    <!-- Lightbox -->
+    {#if openIndex !== null}
+        <div
+            class="fixed inset-0 flex justify-center items-center z-20 bg-[#181226bb] backdrop-blur-xl"
+        >
+            <!-- Close button -->
+            <button
+                class="absolute top-4 right-6 text-white text-5xl hover:text-primary transition-colors z-30"
+                onclick={(e) => { e.stopPropagation(); openIndex = null; setAnimate(true); }}
+                aria-label="Close"
+            >
+                &times;
+            </button>
+
+            <!-- Navigation -->
+            <div class="absolute top-1/2 -translate-y-1/2 flex justify-between w-full pointer-events-none">
+                <button
+                    class="text-white text-7xl cursor-pointer pointer-events-auto px-4 hover:text-primary transition-colors"
+                    onclick={(e) => { e.stopPropagation(); navigate(-1); }}
+                    aria-label="Previous photo"
+                >
+                    &lt;
+                </button>
+                <button
+                    class="text-white text-7xl cursor-pointer pointer-events-auto px-4 hover:text-primary transition-colors"
+                    onclick={(e) => { e.stopPropagation(); navigate(1); }}
+                    aria-label="Next photo"
+                >
+                    &gt;
+                </button>
+            </div>
+
+            <!-- Image — stop clicks from closing the lightbox -->
+            <button aria-label="stop-propagation" onclick={(e) => e.stopPropagation()}>
+                <enhanced:img
+                    src={photosMap[openIndex]}
+                    alt="HackDelft photo"
+                    loading="lazy"
+                    class="w-auto h-auto max-h-[90vh] max-w-[90vw] z-10"
+                />
+            </button>
+        </div>
+    {/if}
 </section>
