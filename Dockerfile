@@ -9,5 +9,5 @@ RUN npm run build
 RUN npm prune --production
 
 # Start the NGINX container.
-FROM wisvch/nginx
+FROM ghcr.io/wisvch/nginx
 COPY --from=builder /app/build /srv
