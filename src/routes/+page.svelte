@@ -5,6 +5,7 @@
     import Pictures from "$lib/Pictures.svelte";
     import Timetable from "$lib/Timetable.svelte";
     import Faq from "$lib/Faq.svelte";
+    import Sponsor from "$lib/Sponsor.svelte";
     import Committee from "$lib/Committee.svelte";
     import Footer from "$lib/footer.svelte";
 </script>
@@ -17,7 +18,7 @@
     <About/>
     <Pictures/>
     <Timetable/>
-    <!-- <Sponsor/> -->
+    <Sponsor/>
     <Faq/>
     <Committee/>
     <Footer/>

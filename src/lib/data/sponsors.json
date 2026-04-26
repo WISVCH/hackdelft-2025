@@ -20,30 +20,9 @@
         "title": "Primary",
         "items": [
             {
-                "logoKey": "navara",
-                "url": "https://www.navara.nl/",
-                "title": "Navara"
-            },
-            {
-                "logoKey": "sping",
-                "url": "https://sping.nl/",
-                "title": "Sping"
-            },
-            {
                 "logoKey": "jetbrains",
                 "url": "https://www.jetbrains.com/",
                 "title": "JetBrains"
-            }
-        ]
-    },
-    {
-        "type": "secondary",
-        "title": "Secondary",
-        "items": [
-            {
-                "logoKey": "unipartners",
-                "url": "https://www.unipartners.nl/",
-                "title": "UniPartners"
             }
         ]
     }
