@@ -1,18 +1,15 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import sponsorData from '$lib/data/sponsors.json';
+    import CHLogo from "$lib/assets/sponsors/ch.svg?as=webp&width=200"
+    import xDelftLogo from "$lib/assets/sponsors/xtudelft.png?as=webp&width=200"
+    import JetBrainsLogo from "$lib/assets/sponsors/jetbrains_logo.png?as=webp&width=200"
 
-    const sponsorLogoDir = "assets/sponsors"
+    const sponsorLogoDir = "$lib/assets/sponsors"
     const sponsorLogoMap: { [key: string]: URL } = {
-        ch: new URL(sponsorLogoDir + "/ch.svg?as=webp&width=200", import.meta.url),
-        xtudelft: new URL(
-            sponsorLogoDir + "/xtudelft.png?as=webp&width=200",
-            import.meta.url
-        ),
-        navara: new URL(sponsorLogoDir + "/nav_logo_navy_diap_rgb.png?as=webp&width=200", import.meta.url),
-        jetbrains: new URL(sponsorLogoDir + "/jetbrains_logo.png?as=webp&width=200", import.meta.url),
-        sping: new URL(sponsorLogoDir + "/Sping_logo.png?as=webp&width=200", import.meta.url),
-        unipartners: new URL(sponsorLogoDir + "/UniPartners-Logo.png?as=webp&width=200", import.meta.url)
+        ch: CHLogo,
+        xtudelft: xDelftLogo,
+        jetbrains: JetBrainsLogo
     };
   interface Sponsor {
     logoKey: string;
