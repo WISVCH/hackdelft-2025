@@ -2,7 +2,7 @@
     import { onMount } from 'svelte';
     import sponsorData from '$lib/data/sponsors.json';
 
-    const sponsorLogoDir = "assets/sponsors/"
+    const sponsorLogoDir = "assets/sponsors"
     const sponsorLogoMap: { [key: string]: URL } = {
         ch: new URL(sponsorLogoDir + "/ch.svg?as=webp&width=200", import.meta.url),
         xtudelft: new URL(
