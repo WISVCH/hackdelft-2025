@@ -4,12 +4,16 @@
     import CHLogo from "$lib/assets/sponsors/ch.svg?as=webp&width=200"
     import xDelftLogo from "$lib/assets/sponsors/xtudelft.png?as=webp&width=200"
     import JetBrainsLogo from "$lib/assets/sponsors/jetbrains_logo.png?as=webp&width=200"
+    import JaneStreetLogo from "$lib/assets/sponsors/janestreet_logo.png?as=webp&width=200"
+    import revolutLogo from "$lib/assets/sponsors/revolut_logo.svg?as=webp&width=200"
 
     const sponsorLogoDir = "$lib/assets/sponsors"
     const sponsorLogoMap: { [key: string]: URL } = {
         ch: CHLogo,
         xtudelft: xDelftLogo,
-        jetbrains: JetBrainsLogo
+        jetbrains: JetBrainsLogo,
+        janestreet: JaneStreetLogo,
+        revolut: revolutLogo
     };
   interface Sponsor {
     logoKey: string;
@@ -80,7 +84,7 @@
                     </div> -->
 
                     <!-- Logo -->
-                    <div class="flex p-6 bg-VodkaWhite rounded-2xl">
+                    <div class="flex p-6 px-12 bg-VodkaWhite rounded-2xl">
                         <img
                         src={sponsorLogoMap[sponsor.logoKey].toString()}
                         alt={sponsor.title}

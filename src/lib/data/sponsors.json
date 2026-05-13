@@ -23,6 +23,22 @@
                 "logoKey": "jetbrains",
                 "url": "https://www.jetbrains.com/",
                 "title": "JetBrains"
+            },
+            {
+                "logoKey": "revolut",
+                "url": "https://www.revolut.com/",
+                "title": "Revolut"
+            }
+        ]
+    },
+    {
+        "type": "secondary",
+        "title": "Secondary",
+        "items": [
+            {
+                "logoKey": "janestreet",
+                "url": "https://www.janestreet.com/",
+                "title": "JaneStreet"
             }
         ]
     }
