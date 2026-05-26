@@ -6,6 +6,7 @@
     import JetBrainsLogo from "$lib/assets/sponsors/jetbrains_logo.png?as=webp&width=200"
     import JaneStreetLogo from "$lib/assets/sponsors/janestreet_logo.png?as=webp&width=200"
     import revolutLogo from "$lib/assets/sponsors/revolut_logo.svg?as=webp&width=200"
+    import imcLogo from "$lib/assets/sponsors/imc_logo.png?as=webp&width=200"
 
     const sponsorLogoDir = "$lib/assets/sponsors"
     const sponsorLogoMap: { [key: string]: URL } = {
@@ -13,7 +14,8 @@
         xtudelft: xDelftLogo,
         jetbrains: JetBrainsLogo,
         janestreet: JaneStreetLogo,
-        revolut: revolutLogo
+        revolut: revolutLogo,
+        imc: imcLogo,
     };
   interface Sponsor {
     logoKey: string;

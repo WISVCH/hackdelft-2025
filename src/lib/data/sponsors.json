@@ -28,6 +28,11 @@
                 "logoKey": "revolut",
                 "url": "https://www.revolut.com/",
                 "title": "Revolut"
+            },
+            {
+                "logoKey": "imc",
+                "url": "https://www.imc.com/eu",
+                "title": "IMC Trading"
             }
         ]
     },
